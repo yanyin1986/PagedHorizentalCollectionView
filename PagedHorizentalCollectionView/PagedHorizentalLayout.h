@@ -2,28 +2,31 @@
 //  PagedHorizentalLayout.h
 //  PagedHorizentalCollectionView
 //
-//  Created by yanyin on 9/26/14.
-//  Copyright (c) 2014 roidapp. All rights reserved.
+//  Created by leon.yan on 9/26/14.
 //
 
 #import <UIKit/UIKit.h>
 
-typedef enum : NSUInteger {
-    CellAligmentAverage,
-    CellAligmentGap,
-} CellAligment;
-
 @interface PagedHorizentalLayout : UICollectionViewLayout
 
-/** 作用在每一页上 */
-@property (nonatomic, assign) UIEdgeInsets  contentInsets;
-/** 单元的大小 */
-@property (nonatomic, assign) CGSize        cellSize;
-/** 水平方向的Gap  >=0 */
-@property (nonatomic, assign) CGFloat       horizentalGap;
-/** 垂直方向的Gap  >=0 */
-@property (nonatomic, assign) CGFloat       verticalGap;
-/** 对齐方式 */
-@property (nonatomic, assign) CellAligment  aligment;
+@property (nonatomic,assign) CGSize tileSize;
+@property (nonatomic,assign) NSInteger linesNum;
+@property (nonatomic,assign) NSInteger columnNum;
+@property (nonatomic,assign) UIEdgeInsets pageContentInsets;
+
+- (instancetype)initWithTileSize:(CGSize)tileSize
+                        linesNum:(NSInteger)linesNum
+                       columnNum:(NSInteger)columnNum
+               pageContentInsets:(UIEdgeInsets)pageContentInsets;
+/** 返回所有的页面的数量 */
+- (NSInteger)pagesNumber;
+/** 返回该section下页面的数量 */
+- (NSInteger)pagesNumberInSection:(NSInteger)section;
+/** 返回该section前还有的页面数量 */
+- (NSInteger)pagesNumberBeforeSection:(NSInteger)secion;
+/** 返回一页里面最多的item数量 */
+- (NSInteger)maxInOnePage;
+
+- (NSInteger)sectionFromPages:(NSInteger)pages;
 
 @end

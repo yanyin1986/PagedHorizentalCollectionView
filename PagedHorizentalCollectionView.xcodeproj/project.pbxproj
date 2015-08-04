@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35058FDC1B7070BF0046DC60 /* PagedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35058FDB1B7070BF0046DC60 /* PagedCollectionView.m */; };
 		BAD3023219D5798500396D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3023119D5798500396D3D /* main.m */; };
 		BAD3023519D5798500396D3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3023419D5798500396D3D /* AppDelegate.m */; };
 		BAD3023819D5798500396D3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3023719D5798500396D3D /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35058FDA1B7070BF0046DC60 /* PagedCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedCollectionView.h; sourceTree = "<group>"; };
+		35058FDB1B7070BF0046DC60 /* PagedCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedCollectionView.m; sourceTree = "<group>"; };
 		BAD3022C19D5798500396D3D /* PagedHorizentalCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagedHorizentalCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD3023019D5798500396D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD3023119D5798500396D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 		BAD3022E19D5798500396D3D /* PagedHorizentalCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				35058FDA1B7070BF0046DC60 /* PagedCollectionView.h */,
+				35058FDB1B7070BF0046DC60 /* PagedCollectionView.m */,
 				BAD3025619D579CD00396D3D /* PagedHorizentalLayout.h */,
 				BAD3025519D579CD00396D3D /* PagedHorizentalLayout.m */,
 				BAD3025B19D57C1900396D3D /* Cell.h */,
@@ -163,6 +168,7 @@
 				BAD3023819D5798500396D3D /* ViewController.m in Sources */,
 				BAD3025719D579CD00396D3D /* PagedHorizentalLayout.m in Sources */,
 				BAD3023519D5798500396D3D /* AppDelegate.m in Sources */,
+				35058FDC1B7070BF0046DC60 /* PagedCollectionView.m in Sources */,
 				BAD3023219D5798500396D3D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +312,7 @@
 				BAD3025119D5798500396D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
